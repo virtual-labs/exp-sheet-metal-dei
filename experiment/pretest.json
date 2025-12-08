@@ -2,37 +2,173 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In blanking operation, the angle of shear is provided on:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Die",
+        "b": "Punch",
+        "c": "Both",
+        "d": "Depends on the material of the work piece"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Providing shear on die is uncommon in blanking.",
+        "b": "Shear is usually provided on the punch to reduce cutting force.",
+        "c": "Shear is generally not provided on both.",
+        "d": "Material does not 결정 where shear is applied."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following operation is not a drawing process:",
+      "answers": {
+        "a": "Bulging",
+        "b": "Spinning",
+        "c": "Lancing",
+        "d": "Embossing"
+      },
+      "explanations": {
+        "a": "Bulging is a sheet metal forming process.",
+        "b": "Spinning is a drawing-related operation.",
+        "c": "Lancing is a cutting operation, not drawing.",
+        "d": "Embossing involves deformation, not drawing."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The thickness of sheet metal is referred to as its _______:",
+      "answers": {
+        "a": "Fraction",
+        "b": "Gauge",
+        "c": "Decimal",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Fraction is not standard terminology.",
+        "b": "Sheet thickness is represented using gauge number.",
+        "c": "Decimal form is not used as a standard reference.",
+        "d": "Gauge is the correct term."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Two or more operations are performed at one station of the press in every stroke of the ram in:",
+      "answers": {
+        "a": "Simple die",
+        "b": "Compound die",
+        "c": "Combination die",
+        "d": "Progressive die"
+      },
+      "explanations": {
+        "a": "Simple die performs only one operation.",
+        "b": "Compound die performs multiple cutting operations at one station.",
+        "c": "Combination die involves cutting and forming.",
+        "d": "Progressive die uses multiple stations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The size of a press is specified by:",
+      "answers": {
+        "a": "Weight of the press",
+        "b": "Size of the workpiece it can handle",
+        "c": "Maximum load that can be applied to the workpiece",
+        "d": "Power required to operate the machine"
+      },
+      "explanations": {
+        "a": "Weight is not a sizing criterion.",
+        "b": "Workpiece size is secondary.",
+        "c": "Press size is defined by its maximum load capacity.",
+        "d": "Power requirement is not used for sizing."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A progressive die performs:",
+      "answers": {
+        "a": "Two or more cutting operations at one station of the process",
+        "b": "Both cutting and non-cutting operations at one station of the process",
+        "c": "Two or more operations at different stations of the press",
+        "d": "Only one operation at each stroke of the ram"
+      },
+      "explanations": {
+        "a": "This describes a compound die.",
+        "b": "This describes a combination die.",
+        "c": "Progressive die performs operations at multiple stations.",
+        "d": "Not correct for progressive dies."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In piercing and blanking operation, the clearance between punch and the die solely depends on:",
+      "answers": {
+        "a": "Diameter of the hole required",
+        "b": "Thickness of the sheet metal",
+        "c": "Number of pieces to be made",
+        "d": "Capacity of the type of press"
+      },
+      "explanations": {
+        "a": "Hole size does not decide clearance.",
+        "b": "Clearance is based on sheet thickness.",
+        "c": "Production quantity is unrelated.",
+        "d": "Press capacity does not affect clearance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which line/axis in the metal is neither compressed nor stretched:",
+      "answers": {
+        "a": "Central axis/line",
+        "b": "Middle line/axis",
+        "c": "Neutral axis/line",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Central axis is not the correct term here.",
+        "b": "Middle line may change during deformation.",
+        "c": "Neutral axis remains unstressed during bending.",
+        "d": "Neutral axis is correct."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The process of cutting a flat sheet to the desired shape is known as:",
+      "answers": {
+        "a": "Blanking",
+        "b": "Trimming",
+        "c": "Stamping",
+        "d": "Piercing"
+      },
+      "explanations": {
+        "a": "Blanking produces the desired external shape.",
+        "b": "Trimming removes excess material.",
+        "c": "Stamping is a general term.",
+        "d": "Piercing creates holes."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A sheet metal is being cut along its length in a straight line. Such an operation is called:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Parting",
+        "b": "Lancing",
+        "c": "Crimping",
+        "d": "Slitting"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Parting separates finished parts.",
+        "b": "Lancing cuts without removing material.",
+        "c": "Crimping is a bending operation.",
+        "d": "Slitting cuts sheet metal along a straight line."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
