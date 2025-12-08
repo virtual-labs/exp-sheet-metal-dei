@@ -2,37 +2,171 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Sheet metal is simply ______ formed into thin and flat pieces:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Nonmetal",
+        "b": "Noble Gas",
+        "c": "Halogen",
+        "d": "Metal"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Sheet metal is not made from nonmetals.",
+        "b": "Noble gases cannot be formed into sheets.",
+        "c": "Halogens do not form sheet metal.",
+        "d": "Sheet metal is thin, flat metal material."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "There are many different metals that can be made into sheet metal, such as ______, brass, copper, steel, tin, nickel and titanium:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Uranium",
+        "b": "Silver",
+        "c": "Aluminium",
+        "d": "Gold"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Uranium is not commonly used for sheet metal.",
+        "b": "Silver is rarely used due to cost.",
+        "c": "Aluminium is widely used in sheet metal industries.",
+        "d": "Gold is not commonly used due to high cost."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The maximum thickness of sheet above which it is called plate:",
+      "answers": {
+        "a": "4 mm",
+        "b": "5 mm",
+        "c": "6 mm",
+        "d": "7 mm"
+      },
+      "explanations": {
+        "a": "4 mm still falls under sheet metal.",
+        "b": "5 mm is generally the upper limit for sheets.",
+        "c": "Thickness above 5 mm is considered plate.",
+        "d": "7 mm is clearly a plate."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In which of the bending operation tip of punch does not touch the bottom of lower die:",
+      "answers": {
+        "a": "V - Bending",
+        "b": "Air Bending",
+        "c": "Wiping Die",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "In V-bending, punch may bottom out.",
+        "b": "In air bending, punch does not touch the die bottom.",
+        "c": "Wiping die uses side pressure.",
+        "d": "Air bending is correct."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Is springback desirable:",
+      "answers": {
+        "a": "Yes",
+        "b": "No",
+        "c": "Can't say"
+      },
+      "explanations": {
+        "a": "Springback causes dimensional inaccuracies.",
+        "b": "Springback is generally undesirable in forming.",
+        "c": "Its effect is well understood and usually undesired."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In roll-bending process ___________ of rod occurs:",
+      "answers": {
+        "a": "Only rolling",
+        "b": "Only bending",
+        "c": "Rolling as well as bending",
+        "d": "Stretching"
+      },
+      "explanations": {
+        "a": "Rolling alone does not define the process.",
+        "b": "Bending alone is insufficient.",
+        "c": "Roll-bending involves both rolling and bending actions.",
+        "d": "Stretching is not the main mechanism."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which types of rod could be put into roll-bending process?",
+      "answers": {
+        "a": "Rectangular rod",
+        "b": "T-shaped rod",
+        "c": "I-shaped rod",
+        "d": "Rods of any shape"
+      },
+      "explanations": {
+        "a": "Rectangular rods can be bent.",
+        "b": "T-shaped rods can be bent.",
+        "c": "I-shaped rods can also be bent.",
+        "d": "Roll bending can handle rods of various shapes."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Identify the type of rotation of rollers A, B and C respectively:",
+      "answers": {
+        "a": "Anticlockwise, Anticlockwise, Anticlockwise",
+        "b": "Anticlockwise, Clockwise, Anticlockwise",
+        "c": "Clockwise, Anticlockwise, Anticlockwise",
+        "d": "Anticlockwise, Clockwise, Clockwise"
+      },
+      "explanations": {
+        "a": "All rollers rotating same direction is incorrect.",
+        "b": "Middle roller rotates opposite for bending.",
+        "c": "Roller directions do not match standard setup.",
+        "d": "Standard roll bending uses opposite rotation for feed rollers."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The strain developed in the rod is due to:",
+      "answers": {
+        "a": "Roller A",
+        "b": "Roller B",
+        "c": "Roller C",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Single roller does not cause total strain.",
+        "b": "Central roller alone is not responsible.",
+        "c": "Side roller alone is insufficient.",
+        "d": "Combined action of all rollers develops strain."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Feed rollers in the process are used for:",
+      "answers": {
+        "a": "Feeding and reducing the thickness of rod",
+        "b": "Feeding the rod and bending the rod",
+        "c": "Only feeding the rod",
+        "d": "Only bending the rod"
+      },
+      "explanations": {
+        "a": "Thickness reduction is not the objective.",
+        "b": "Feed rollers both feed and assist bending.",
+        "c": "They do more than just feeding.",
+        "d": "Bending alone is not their only role."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
