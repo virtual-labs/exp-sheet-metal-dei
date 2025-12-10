@@ -86,7 +86,7 @@ In practical terms, if we want a workpiece with a 90-degree bend in which one le
   <img src="images/SheetMetal/formulla1.jpg" width="200" height="70">
 </p>
 
-Where:$A_b$ = Bend allowance $\alpha$ = Bend angle$R$ = Bend radius $t$ = Stock thickness $K_{ba}$ = Factor to estimate stretching
+Where:$A_{b}$ = Bend allowance $\alpha$ = Bend angle$R$ = Bend radius  $t$ = Stock thickness $K_{ba}$ = Factor to estimate stretching
 
  If $R < 2t$, $K_{ba} = 0.33$
  If $R = 2t$, $K_{ba} = 0.50$
