@@ -44,9 +44,13 @@ A shearing process using a die and punch where the exterior portion of the shear
 </p>
 
 **3. Perforating:** Punching a number of holes in a sheet.
+
 **4. Parting:** Shearing the sheet into two or more pieces.
+
 **5. Notching:** Removing pieces from the edges.
+
 **6. Lancing:** Leaving a tab without removing any material.
+
 
 ### 3.2 Forming Processes
 
@@ -82,15 +86,10 @@ In practical terms, if we want a workpiece with a 90-degree bend in which one le
   <img src="images/SheetMetal/formulla1.jpg" width="200" height="70">
 </p>
 
-Where:
-* $A_b$ = Bend allowance
-* $\alpha$ = Bend angle
-* $R$ = Bend radius
-* $t$ = Stock thickness
-* $K_{ba}$ = Factor to estimate stretching
+Where:$A_b$ = Bend allowance $\alpha$ = Bend angle$R$ = Bend radius $t$ = Stock thickness $K_{ba}$ = Factor to estimate stretching
 
-> If $R < 2t$, $K_{ba} = 0.33$
-> If $R = 2t$, $K_{ba} = 0.50$
+ If $R < 2t$, $K_{ba} = 0.33$
+ If $R = 2t$, $K_{ba} = 0.50$
 
 **Spring Back:**
 Because all materials have a finite modulus of elasticity, plastic deformation is followed by elastic recovery upon removal of the load; in bending, this recovery is known as spring back. The amount of spring back depends on the material, thickness, grain, and temper. The spring back will usually range from 5 to 10 degrees.
@@ -104,10 +103,10 @@ Because all materials have a finite modulus of elasticity, plastic deformation i
 </p>
 
 Where:
-* $R_i$ and $R_f$ are the initial and final bend radii, respectively.
-* $Y$ = Yield strength of the material.
-* $E$ = Modulus of elasticity of the material.
-* $T$ = Thickness of the material.
+* Ri and Rf are the initial and final bend radii, respectively.
+* Y = Yield strength of the material.
+* E = Modulus of elasticity of the material.
+* T = Thickness of the material.
 
 **Bending Force Formula:**
 The equation for estimating the maximum bending force is:
@@ -117,10 +116,10 @@ The equation for estimating the maximum bending force is:
 </p>
 
 Where:
-* $k$ is a factor
-* $T$ is the ultimate tensile strength of the metal
-* $L$ is the Length of sheet metal
-* $t$ is the thickness of sheet metal
+* k is a factor
+* T is the ultimate tensile strength of the metal
+* L is the Length of sheet metal
+* t is the thickness of sheet metal
 
 **Types of Bending Processes:**
 
@@ -232,7 +231,7 @@ A process by which a metal strip is progressively bent as it passes through a se
 Most of us are familiar with corrugated cardboards used to make cartons. The same principle applies to corrugated sheet metal roofing. The wave-like pattern (ridges and grooves) gives them extra strength despite being lightweight.
 
 <p align="center">
-  <img src="images/CorrugatedSheet/CorrugatedSheet.jpg" alt="Corrugated Sheet"><br>
+  <img src="images/CorrugatedSheet/CorrugatedSheet.png" alt="Corrugated Sheet"><br>
   <em>Figure: Corrugated Sheet</em>
 </p>
 
@@ -272,5 +271,4 @@ Most of us are familiar with corrugated cardboards used to make cartons. The sam
   <img src="images/CorrugatedSheet/Sheet2.png">
 </p>
 
----
-&copy; Metal Forming Virtual Simulation Lab - Dayalbagh Educational Institute (www.dei.ac.in)
+
