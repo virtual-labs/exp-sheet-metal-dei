@@ -1,4 +1,3 @@
-# Procedure — Sheet Metal Experiment
 
 Detailed step-by-step procedure for common sheet metal operations (shearing, bending, punching, forming).
 
