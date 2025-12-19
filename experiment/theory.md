@@ -1,4 +1,3 @@
-# Sheet Metal Working
 
 ## 1. Introduction
 Sheet metal is simply metal formed into thin and flat pieces. It is one of the fundamental forms used in metalworking and can be cut and bent into a variety of different shapes. Countless everyday objects are constructed of the material. Thicknesses can vary significantly, although extremely thin thicknesses are considered foil or leaf, and pieces thicker than 6 mm (0.25 in) are considered plate.
