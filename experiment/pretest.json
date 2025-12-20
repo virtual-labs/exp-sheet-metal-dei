@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "In blanking operation, the angle of shear is provided on:",
+      "question": "Q1.In blanking operation, the angle of shear is provided on:",
       "answers": {
         "a": "Die",
         "b": "Punch",
@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following operation is not a drawing process:",
+      "question": "Q2.Which of the following operation is not a drawing process:",
       "answers": {
         "a": "Bulging",
         "b": "Spinning",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The thickness of sheet metal is referred to as its _______:",
+      "question": "Q3.The thickness of sheet metal is referred to as its _______:",
       "answers": {
         "a": "Fraction",
         "b": "Gauge",
@@ -53,7 +53,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Two or more operations are performed at one station of the press in every stroke of the ram in:",
+      "question": "Q4.Two or more operations are performed at one station of the press in every stroke of the ram in:",
       "answers": {
         "a": "Simple die",
         "b": "Compound die",
@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The size of a press is specified by:",
+      "question": "Q5.The size of a press is specified by:",
       "answers": {
         "a": "Weight of the press",
         "b": "Size of the workpiece it can handle",
@@ -87,7 +87,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A progressive die performs:",
+      "question": "Q6.A progressive die performs:",
       "answers": {
         "a": "Two or more cutting operations at one station of the process",
         "b": "Both cutting and non-cutting operations at one station of the process",
@@ -104,7 +104,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "In piercing and blanking operation, the clearance between punch and the die solely depends on:",
+      "question": "Q7.In piercing and blanking operation, the clearance between punch and the die solely depends on:",
       "answers": {
         "a": "Diameter of the hole required",
         "b": "Thickness of the sheet metal",
@@ -121,7 +121,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which line/axis in the metal is neither compressed nor stretched:",
+      "question": "Q8.Which line/axis in the metal is neither compressed nor stretched:",
       "answers": {
         "a": "Central axis/line",
         "b": "Middle line/axis",
@@ -138,7 +138,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The process of cutting a flat sheet to the desired shape is known as:",
+      "question": "Q9.The process of cutting a flat sheet to the desired shape is known as:",
       "answers": {
         "a": "Blanking",
         "b": "Trimming",
@@ -155,7 +155,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A sheet metal is being cut along its length in a straight line. Such an operation is called:",
+      "question": "Q10.A sheet metal is being cut along its length in a straight line. Such an operation is called:",
       "answers": {
         "a": "Parting",
         "b": "Lancing",
