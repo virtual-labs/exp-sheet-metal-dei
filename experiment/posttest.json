@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Sheet metal is simply ______ formed into thin and flat pieces:",
+      "question": "Q11.Sheet metal is simply ______ formed into thin and flat pieces:",
       "answers": {
         "a": "Nonmetal",
         "b": "Noble Gas",
@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "There are many different metals that can be made into sheet metal, such as ______, brass, copper, steel, tin, nickel and titanium:",
+      "question": "Q12.There are many different metals that can be made into sheet metal, such as ______, brass, copper, steel, tin, nickel and titanium:",
       "answers": {
         "a": "Uranium",
         "b": "Silver",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The maximum thickness of sheet above which it is called plate:",
+      "question": "Q13.The maximum thickness of sheet above which it is called plate:",
       "answers": {
         "a": "4 mm",
         "b": "5 mm",
@@ -53,7 +53,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "In which of the bending operation tip of punch does not touch the bottom of lower die:",
+      "question": "Q14.In which of the bending operation tip of punch does not touch the bottom of lower die:",
       "answers": {
         "a": "V - Bending",
         "b": "Air Bending",
@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Is springback desirable:",
+      "question": "Q15.Is springback desirable:",
       "answers": {
         "a": "Yes",
         "b": "No",
@@ -85,7 +85,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "In roll-bending process ___________ of rod occurs:",
+      "question": "Q16.In roll-bending process ___________ of rod occurs:",
       "answers": {
         "a": "Only rolling",
         "b": "Only bending",
@@ -102,7 +102,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which types of rod could be put into roll-bending process?",
+      "question": "17.Which types of rod could be put into roll-bending process?",
       "answers": {
         "a": "Rectangular rod",
         "b": "T-shaped rod",
@@ -119,7 +119,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Identify the type of rotation of rollers A, B and C respectively:",
+      "question": "Q18.Identify the type of rotation of rollers A, B and C respectively:",
       "answers": {
         "a": "Anticlockwise, Anticlockwise, Anticlockwise",
         "b": "Anticlockwise, Clockwise, Anticlockwise",
@@ -136,7 +136,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The strain developed in the rod is due to:",
+      "question": "Q19.The strain developed in the rod is due to:",
       "answers": {
         "a": "Roller A",
         "b": "Roller B",
@@ -153,7 +153,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Feed rollers in the process are used for:",
+      "question": "Q20.Feed rollers in the process are used for:",
       "answers": {
         "a": "Feeding and reducing the thickness of rod",
         "b": "Feeding the rod and bending the rod",
