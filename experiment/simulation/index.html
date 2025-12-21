@@ -1,541 +1,157 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Ring Compression Test — Interactive Simulation</title>
-<style>
-  :root{
-    --bg:#eef3f8; --card:#fff; --accent:#0b63d6; --muted:#6b7280;
-    --good:#d4edda; --bad:#f8d7da; --warn:#fff3cd;
-    font-family: Inter, Roboto, "Segoe UI", Arial, sans-serif;
-  }
-  html,body{height:100%;margin:0;background:var(--bg);color:#0b1720}
-  .container{max-width:1200px;margin:20px auto;padding:18px;background:var(--card);border-radius:10px;box-shadow:0 12px 30px rgba(10,20,40,0.08)}
-  h1{margin:0 0 6px;color:var(--accent);text-align:center}
-  p.lead{margin:6px 0 18px;text-align:center;color:var(--muted)}
-  .panel{display:flex;gap:18px;align-items:flex-start}
-  #machine-view{flex:1;min-height:520px;background:#333;border-radius:8px;position:relative;overflow:hidden}
-  canvas{display:block;background:#555;width:100%;height:520px}
-  #control-panel{width:360px;min-width:260px;padding:14px;background:#f7fbff;border:1px solid #e3f0ff;border-radius:8px;display:flex;flex-direction:column;gap:12px}
-  .control-group{background:#fff;padding:10px;border-radius:8px;border:1px solid #eef4ff}
-  label{display:block;font-weight:700;color:var(--accent);margin-bottom:6px}
-  input[type=number], input[type=range], select{width:100%;padding:6px;border-radius:6px;border:1px solid #cfdcec;font-size:14px}
-  .small{font-size:13px;color:var(--muted)}
-  .btn{padding:10px;border-radius:8px;border:none;font-weight:700;cursor:pointer}
-  .btn.clamp{background:#ff9800;color:#fff}
-  .btn.start{background:#4caf50;color:#fff}
-  .btn.reset{background:#f44336;color:#fff}
-  .btn.export{background:#0b63d6;color:#fff}
-  .btn:disabled{opacity:0.5;cursor:not-allowed}
-  #status-bar{margin-top:6px;padding:10px;border-radius:8px;background:#e6f3ff;color:#034a7a;font-weight:700;text-align:center}
-  #progress-bar-container{position:absolute;left:6%;right:6%;bottom:18px;background:rgba(255,255,255,0.08);padding:8px;border-radius:6px;display:none}
-  #progress-bar{height:14px;background:#2196f3;width:0%;border-radius:6px;transition:width 0.08s linear}
-  #readouts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .readout{flex:1;min-width:130px;background:#fff;padding:8px;border-radius:8px;border:1px solid #eef4ff;font-weight:600}
-  #chart-box{background:#fff;padding:8px;border-radius:8px;border:1px solid #eef4ff;margin-top:10px}
-  footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
-  @media (max-width:1000px){.panel{flex-direction:column}.container{margin:8px}}
-</style>
+    <meta charset="UTF-8" />
+    <title>Comparative Simulation</title>
+    <!-- Your external CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Ring Compression Test — Interactive Simulation</h1>
-    <p class="lead">Visualize how height reduction and friction affect inner diameter change. (Volume-conserving geometric model — educational demo)</p>
 
-    <div class="panel">
-      <div id="machine-view">
-        <canvas id="simCanvas" width="900" height="520"></canvas>
+<br>
+    <h2 class="page-title">Simulation- SHEETMETAL</h2>
 
-        <div id="progress-bar-container">
-          <div style="font-size:13px;color:#eef;font-weight:700;margin-bottom:6px;text-align:center">Forming Progress</div>
-          <div id="progress-bar"></div>
+    <!-- 3 sections in a row (responsive grid) -->
+    <div class="section-row">
+        <section class="section">
+            <h3><u>BENDING OPERATIONS</u></h3>
+            <h3>BENDING OPERATION TO REDUCE THE SPRING BACK </h3>
+            <div class="block">
+                <h4><a href="case1.html">V SHAPE PUNCH</a></h4>
+            </div>
+          <div class="block">
+                <h4><a href="case1.html">U SHAPE PUNCH</a></h4>
+            </div>
+          <div class="block">
+                <h4><a href="case1.html">V SHAPE PUNCH AND CURVE</a></h4>
+            </div>
+            <hr>
+              <h3>BENDING OPERATION TO REMOVE THE SPRING BACK </h3>
+            <div class="block">
+                <h4><a href="case2.html">Simulation</a></h4>
+                
+            </div>
+            <hr>
+            <h3>COMMON DIE BENDING</h3>
+            <div class="block">
+                <h4><a href="case3.html">V BENDING</a></h4>
+               
+            </div>
+          <div class="block">
+                <h4><a href="case3.html">CIRCULAR BENDING</a></h4>
+               
+            </div>
+            <hr>
+          <h3>WIPE DIE BENDING</h3>
+            <div class="block">
+                <h4><a href="case3.html">SIMULATION</a></h4>
+               
+            </div>
+          <hr>
+          <h3>AIR BENDING</h3>
+            <div class="block">
+                <h4><a href="case3.html">SIMULATION</a></h4>
+               
+            </div>
+        </section>
+
+        
+        <section class="section">
+          <h3><u>Applications: </u></h3>
+<br>
+        <h3>CORRUGATED SHEET </h3>
+        <div class="block">
+                            <h4><a href="s1.html">CORRUGATED SHEET </a></h4>
+                <h4><a href="s2.html">CORRUGATED SHEET WITH FORGING FORCE</a></h4>
+          <h4><a href="s3.html"> CIRCULAR CORRUGATED SHEET </a></h4>
+           <h4><a href="s4.html"> CONICAL CORRUGATED SHEET </a></h4>
+ <h4><a href="s5.html"> CONTINUOUS CORRUGATED SHEET </a></h4>
+ <h4><a href="s6.html"> DISCRETE CORRUGATED SHEET </a></h4>
+
+
         </div>
-      </div>
+         <h3>BEAD FORMING </h3>
+        <div class="block">
+                            <h4><a href="B1.html">BEAD FORMING OF ROD </a></h4>
+          <h4><a href="B2.html">BEAD FORMING OF ROD WITH STRAIN </a></h4>
+          <h4><a href="B3.html">BEAD FORMING OF ROD WITH CURVE </a></h4>
+          
+          <h4><a href="B4.html">BEAD FORMING OF SHEET WITH STRAIN</a></h4>
+          <h4><a href="B4.html">BEAD FORMING OF SHEET WITH CURVE </a></h4>
+          
 
-      <div id="control-panel">
+        </DIV>
+        <h3>DEEP DRAWING </h3>
+        <div class="block">
+                            <h4><a href="D1.html">DEEP DRAWING DOWNWARDS</a></h4>
+           <h4><a href="D2.html">DEEP DRAWING UPWARDS</a></h4>
+        </DIV>
+          
+          <h3>ROLL FORMING</h3>
+        <div class="block">
+                            <h4><a href="R1.html">ROLL FORMING</a></h4>
+          <h4><a href="R1.html">ROLL FORMING WITH CURVE</a></h4>
+              
+        </DIV>
+          <h3>ROLL BENDING</h3>
+        <div class="block">
+                            <h4><a href="ROLL1.html">ROLL BENDING</a></h4>
+          
+              
+        </DIV>
+          <h3>PIERCING</h3>
+        <div class="block">
+                            <h4><a href="PI1.html">PIERCING PROCESS</a></h4>
+          <h4><a href="PI2.html">PIERCING SETUP</a></h4>
+          <h4><a href="PI3.html">PIERCING WITH STRAIN</a></h4>
+          <h4><a href="PI4.html">PIERCING WITH FORGING FORCE</a></h4>
+              
+        </DIV>
+          <h3>BUSH</h3>
+        <div class="block">
+                            <h4><a href="BU1.html">BUSH FORMING </a></h4>
+          <h4><a href="BU2.html">BUSH FORMING WITH CURVE</a></h4>
+          <h4><a href="BU3.html">BUSH FORMING STEP 1</a></h4>
+          <h4><a href="BU4.html">BUSH FORMING STEP 1 WITH CURVE</a></h4>
+          <h4><a href="BU5.html">BUSH FORMING STEP 2</a></h4>
+          <h4><a href="BU6.html">BUSH FORMING  STEP 2 WITH CURVE</a></h4>
+              
+        </DIV>
+           <h3>PUNCHING</h3>
+        <div class="block">
+                            <h4><a href="PI1.html">PUNCHING PROCESS</a></h4>
+          <h4><a href="PI2.html">PUNCHING WITH CONTOUR</a></h4>
+          <h4><a href="PI3.html">PIERCING WITH GRAPH</a></h4>
+          
+              
+        </DIV>
+          <h3>COINING</h3>
+        <div class="block">
+                            <h4><a href="ROLL1.html">SIMULATION</a></h4>
+          
+              
+        </DIV>
+          <h3>DOOR HANDLE </h3>
+        <div class="block">
+                            <h4><a href="ROLL1.html">SIMULATION</a></h4>
+          
+              
+        </DIV>
+          <h3>COVER PLATE</h3>
+        <div class="block">
+                            <h4><a href="ROLL1.html">SIMULATION</a></h4>
+          
+              
+        </DIV>
+            <br>
 
-        <div class="control-group">
-          <label>Specimen geometry</label>
-          <div class="small">Outer diameter (OD, mm)</div>
-          <input id="od" type="number" min="10" value="60" />
-          <div class="small" style="margin-top:8px">Inner diameter (ID, mm)</div>
-          <input id="id" type="number" min="2" value="30" />
-          <div class="small" style="margin-top:8px">Height (H, mm)</div>
-          <input id="h" type="number" min="1" value="20" />
-        </div>
+           
+          <!--<h3><a href="pattern.html">PATTERN MAKING</a></h3>-->
+        </section>
 
-        <div class="control-group">
-          <label>Test parameters</label>
-          <div class="small">Target height reduction (%)</div>
-          <input id="reduction" type="number" min="1" max="80" value="40" />
-          <div style="margin-top:8px" class="small">Friction parameter (0 = low / 1 = high)</div>
-          <input id="friction" type="range" min="0" max="1" step="0.01" value="0.4" />
-          <div class="small" id="fricVal" style="margin-top:6px">Friction = 0.40</div>
-
-          <div style="display:flex;gap:8px;margin-top:8px">
-            <button id="lubBtn" class="btn" title="Lubricated preset">Lubricated</button>
-            <button id="dryBtn" class="btn" title="Dry preset">Dry</button>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:8px">
-          <button id="clampBtn" class="btn clamp">Clamp Workpiece</button>
-          <button id="startBtn" class="btn start" disabled>Start</button>
-          <button id="resetBtn" class="btn reset" disabled>Reset</button>
-        </div>
-
-        <div id="status-bar">Status: Click <strong>Clamp Workpiece</strong> to enable controls.</div>
-
-        <div id="readouts">
-          <div class="readout">H₀: <span id="H0">20.00</span> mm</div>
-          <div class="readout">ID₀: <span id="ID0">30.00</span> mm</div>
-          <div class="readout">OD₀: <span id="OD0">60.00</span> mm</div>
-
-          <div class="readout">H: <span id="Hc">20.00</span> mm</div>
-          <div class="readout">ID: <span id="IDc">30.00</span> mm</div>
-          <div class="readout">OD: <span id="ODc">60.00</span> mm</div>
-        </div>
-
-        <div class="control-group" id="chart-box">
-          <label>Calibration curves (simulated)</label>
-          <canvas id="calCanvas" width="320" height="180" style="display:block;background:#fff;border-radius:6px"></canvas>
-          <div class="small" style="margin-top:6px">Estimated friction from geometry: <strong id="estFric">—</strong></div>
-          <div style="margin-top:6px">
-            <button id="exportBtn" class="btn export" style="width:100%">Export final result (CSV)</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <footer>Model notes: This demo conserves volume and uses a tunable empirical expansion law. Not a full FEM model.</footer>
-  </div>
-
-<script>
-/* ===== Ring Compression Simulation (single-file) =====
-   - Volume conserving geometric model
-   - Empirical outer expansion controlled by friction parameter
-   - Generates calibration curves from the model for various friction factors
-   - Estimates friction by nearest curve-matching
-   - Export final results as CSV
-   -------------------------------------------------- */
-
-// DOM references
-const canvas = document.getElementById('simCanvas');
-const ctx = canvas.getContext('2d');
-const calCanvas = document.getElementById('calCanvas');
-const cctx = calCanvas.getContext('2d');
-
-const OD_in = document.getElementById('od');
-const ID_in = document.getElementById('id');
-const H_in = document.getElementById('h');
-const reduction_in = document.getElementById('reduction');
-const friction_in = document.getElementById('friction');
-const fricVal = document.getElementById('fricVal');
-const fricPresetLub = document.getElementById('lubBtn');
-const fricPresetDry = document.getElementById('dryBtn');
-
-const clampBtn = document.getElementById('clampBtn');
-const startBtn = document.getElementById('startBtn');
-const resetBtn = document.getElementById('resetBtn');
-const exportBtn = document.getElementById('exportBtn');
-const statusBar = document.getElementById('status-bar');
-const progressBarContainer = document.getElementById('progress-bar-container');
-const progressBar = document.getElementById('progress-bar');
-
-const H0read = document.getElementById('H0');
-const ID0read = document.getElementById('ID0');
-const OD0read = document.getElementById('OD0');
-const Hcread = document.getElementById('Hc');
-const IDcread = document.getElementById('IDc');
-const ODcread = document.getElementById('ODc');
-const estFricOut = document.getElementById('estFric');
-
-let clamped=false, running=false, animId=null;
-let OD0, ID0, H0; // initial geometry
-let modelInitial = null;
-
-// visual & model constants
-const cx = canvas.width/2;
-const cy = canvas.height/2 + 10;
-const scale = 3.0; // mm -> px for drawing
-const gamma_default = 0.55; // controls sensitivity of OD expansion to friction (tuneable)
-
-// Calibration curve settings (generate using the same model)
-const calibFricValues = [0.05,0.2,0.4,0.6,0.8]; // from low -> high friction
-const calibCurves = {}; // store {fric: [ {reduction, idChange} ]}
-
-// helper: clamp numeric
-function clamp(v, a, b){ return Math.max(a, Math.min(b, v)); }
-
-// update initial state (read inputs)
-function updateInitialState(){
-  OD0 = parseFloat(OD_in.value) || 60;
-  ID0 = parseFloat(ID_in.value) || 30;
-  H0  = parseFloat(H_in.value) || 20;
-
-  // guard geometry
-  if(ID0 >= OD0 - 0.1){ ID0 = Math.max(1, OD0 - 1); ID_in.value = ID0; }
-  if(H0 <= 0.5){ H0 = 0.5; H_in.value = H0; }
-
-  const A0 = Math.PI*(OD0*OD0 - ID0*ID0)/4.0;
-  const V0 = A0 * H0;
-  modelInitial = {OD0, ID0, H0, A0, V0};
-
-  H0read.textContent = H0.toFixed(2);
-  ID0read.textContent = ID0.toFixed(2);
-  OD0read.textContent = OD0.toFixed(2);
-  Hcread.textContent = H0.toFixed(2);
-  IDcread.textContent = ID0.toFixed(2);
-  ODcread.textContent = OD0.toFixed(2);
-}
-
-// show friction value
-friction_in.addEventListener('input', ()=>{
-  fricVal.textContent = 'Friction = ' + parseFloat(friction_in.value).toFixed(2);
-});
-fricPresetLub.addEventListener('click', ()=> { friction_in.value = 0.12; fricVal.textContent='Friction = 0.12'; });
-fricPresetDry.addEventListener('click', ()=> { friction_in.value = 0.85; fricVal.textContent='Friction = 0.85'; });
-
-// Drawing helpers
-function clearCanvas(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-}
-function drawDies(){
-  // top die
-  ctx.fillStyle = '#9aaabc';
-  ctx.fillRect(0, cy-220, canvas.width, 54);
-  // bottom die
-  ctx.fillStyle = '#9aaabc';
-  ctx.fillRect(0, cy+120, canvas.width, 80);
-}
-function drawRing(OD, ID, H){
-  // radii in px
-  const outerR = (OD/2)*scale;
-  const innerR = (ID/2)*scale;
-
-  // visual gap proportional to height (for effect)
-  const gap = Math.max(10, (H/2)*scale);
-  // center ring
-  ctx.save();
-  ctx.translate(cx, cy);
-  // outer ellipse (slightly flattened for perspective)
-  ctx.fillStyle = '#3b82f6';
-  ctx.beginPath();
-  ctx.ellipse(0, 0, outerR, outerR*0.68, 0, 0, Math.PI*2);
-  ctx.fill();
-  // inner hole
-  ctx.fillStyle = '#fff';
-  ctx.beginPath();
-  ctx.ellipse(0, 0, innerR, innerR*0.68, 0, 0, Math.PI*2);
-  ctx.fill();
-  // outlines
-  ctx.strokeStyle = '#1f4f9b'; ctx.lineWidth = 2;
-  ctx.beginPath(); ctx.ellipse(0,0,outerR,outerR*0.68,0,0,Math.PI*2); ctx.stroke();
-  ctx.beginPath(); ctx.ellipse(0,0,innerR,innerR*0.68,0,0,Math.PI*2); ctx.stroke();
-
-  // top & bottom die lines for reference (visual)
-  ctx.restore();
-}
-
-// Render textual overlay
-function renderOverlay(progress, Hc, ODc, IDc){
-  ctx.fillStyle = '#fff'; ctx.font = '13px Inter, Arial';
-  ctx.fillText('Progress: ' + Math.round(progress*100) + '%', 12, 24);
-  ctx.fillText('H (mm): ' + Hc.toFixed(2), 12, 44);
-  ctx.fillText('OD (mm): ' + ODc.toFixed(2), 12, 64);
-  ctx.fillText('ID (mm): ' + IDc.toFixed(2), 12, 84);
-}
-
-function renderState(ODc, IDc, Hc, progress){
-  clearCanvas();
-  drawDies();
-  drawRing(ODc, IDc, Hc);
-  renderOverlay(progress, Hc, ODc, IDc);
-}
-
-// ===== Model: compute final ODf, IDf given friction & reduction =====
-// Approach:
-//   - Volume conservation: A0 * H0 = Af * Hf
-//   - Af = π/4 (ODf^2 - IDf^2)
-//   - Empirical OD expansion: ODf = OD0 * (1 + gamma * r * (1 - f))
-function computeFinalGeometry(OD0, ID0, H0, reductionFraction, friction, gamma=gamma_default){
-  const A0 = Math.PI*(OD0*OD0 - ID0*ID0)/4.0;
-  const V0 = A0*H0;
-  const Hf = H0*(1 - reductionFraction);
-  const Af = V0 / Hf;
-
-  // heuristic OD estimate (outer expansion larger when friction is low)
-  const ODf_guess = OD0 * (1 + gamma * reductionFraction * (1 - friction));
-
-  // compute IDf from area conservation: IDf^2 = ODf^2 - 4Af/π
-  let rad = ODf_guess*ODf_guess - (4*Af)/Math.PI;
-  let IDf = Math.sqrt(Math.max(0, rad));
-  let ODf = ODf_guess;
-
-  // fallback: if geometry impossible (rad < 0), reduce ODf_guess iteratively
-  if(isNaN(IDf) || IDf >= ODf - 0.01){
-    // iterate to find ODf such that 4Af/π <= ODf^2 - tiny
-    let od = Math.max(OD0, ODf_guess);
-    for(let i=0;i<60;i++){
-      od += 0.02; // nudge up slightly
-      rad = od*od - (4*Af)/Math.PI;
-      if(rad > 0){ IDf = Math.sqrt(rad); ODf = od; break; }
-    }
-    if(isNaN(IDf) || IDf >= ODf - 0.01){
-      // last fallback: keep IDf slightly reduced from ID0 proportional to friction
-      IDf = Math.max(1, ID0 * (1 - 0.25*friction*reductionFraction));
-      ODf = Math.sqrt((4*Af)/Math.PI + IDf*IDf);
-    }
-  }
-
-  // safety clamps
-  IDf = Math.max(0.5, Math.min(IDf, ODf - 0.5));
-  ODf = Math.max(IDf + 0.5, ODf);
-
-  return {Hf, ODf, IDf, Af, V0};
-}
-
-// ===== Calibration curves generation (used to estimate friction) =====
-function generateCalibration(){
-  // We'll compute ID change (ΔID%) vs height reduction for a set of friction values
-  for(const f of calibFricValues){
-    let pts = [];
-    for(let rPerc=5; rPerc<=70; rPerc+=5){
-      const r = rPerc/100.0;
-      const g = computeFinalGeometry(OD0, ID0, H0, r, f);
-      const idChangePerc = (g.IDf - ID0)/ID0; // relative change
-      pts.push({reduction: rPerc, idChange: idChangePerc});
-    }
-    calibCurves[f] = pts;
-  }
-  drawCalibration(); // paint on calCanvas
-}
-
-// draw calibration chart with small axes
-function drawCalibration(){
-  const W = calCanvas.width, H = calCanvas.height;
-  cctx.clearRect(0,0,W,H);
-  // background
-  cctx.fillStyle = '#ffffff';
-  cctx.fillRect(0,0,W,H);
-
-  // axes margins
-  const m = 30, w = W - 2*m, h = H - 2*m;
-  // axes lines
-  cctx.strokeStyle = '#ccc';
-  cctx.beginPath(); cctx.moveTo(m,m+h); cctx.lineTo(m,m); cctx.lineTo(m+w,m); cctx.stroke();
-
-  // Labels
-  cctx.fillStyle = '#333'; cctx.font = '12px Arial';
-  cctx.fillText('ID change (%)', 6, m-6);
-  cctx.fillText('Reduction (%)', W-70, H-6);
-
-  // find max/min idChange for scaling
-  let minID = Infinity, maxID = -Infinity;
-  for(const f of calibFricValues){
-    for(const p of calibCurves[f]){
-      minID = Math.min(minID, p.idChange);
-      maxID = Math.max(maxID, p.idChange);
-    }
-  }
-  // expand a bit
-  minID = Math.min(minID, -0.5);
-  maxID = Math.max(maxID, 1.0);
-
-  // draw curves
-  const colors = ['#1f78b4','#33a02c','#ff7f00','#6a3d9a','#e31a1c'];
-  let fi=0;
-  for(const f of calibFricValues){
-    const pts = calibCurves[f];
-    cctx.strokeStyle = colors[fi%colors.length];
-    cctx.lineWidth = 2;
-    cctx.beginPath();
-    for(let i=0;i<pts.length;i++){
-      const px = m + (pts[i].reduction - 5) / 65 * w;
-      const py = m + h - ( (pts[i].idChange - minID) / (maxID - minID) ) * h;
-      if(i===0) cctx.moveTo(px,py); else cctx.lineTo(px,py);
-    }
-    cctx.stroke();
-    // legend point
-    cctx.fillStyle = colors[fi%colors.length];
-    cctx.fillRect(W-100, m + fi*14, 10,10);
-    cctx.fillStyle = '#000';
-    cctx.fillText('f=' + f.toFixed(2), W-86, m + fi*14 + 10);
-    fi++;
-  }
-
-  // axis tick labels
-  cctx.fillStyle = '#444'; cctx.font = '11px Arial';
-  for(let r=5; r<=70; r+=15){
-    const x = m + (r-5)/65 * w;
-    cctx.fillText(r + '%', x-8, m+h+14);
-  }
-  // ID-change ticks
-  for(let t=0;t<=4;t++){
-    const val = minID + (maxID - minID)* (t/4);
-    const y = m + h - (t/4)*h;
-    cctx.fillText( (val*100).toFixed(0) + '%', 2, y+4);
-  }
-}
-
-// Estimate friction by comparing final (reduction, idChange) to calibration curves (closest L2)
-function estimateFrictionFromPoint(reductionPerc, idChangePerc){
-  let best = {f:null, dist:Infinity};
-  for(const f of calibFricValues){
-    // find nearest reduction point in that curve (we used same reduction grid)
-    const pts = calibCurves[f];
-    // find point with matching reduction
-    let nearest = pts.reduce((acc,p)=> Math.abs(p.reduction - reductionPerc) < Math.abs(acc.reduction - reductionPerc)? p:acc, pts[0]);
-    const d = Math.abs(nearest.idChange - idChangePerc);
-    if(d < best.dist){ best = {f, dist:d, match:nearest}; }
-  }
-  return best.f;
-}
-
-// ===== UI: clamp / start / reset / export =====
-clampBtn.addEventListener('click', ()=>{
-  if(clamped) return;
-  clamped = true;
-  clampBtn.textContent = 'Workpiece Clamped';
-  clampBtn.disabled = true;
-  startBtn.disabled = false;
-  resetBtn.disabled = true;
-  statusBar.textContent = 'Status: Set reduction & friction, then click START';
-  updateInitialState();
-  generateCalibration();
-  renderState(OD0, ID0, H0, 0);
-});
-
-startBtn.addEventListener('click', ()=>{
-  if(!clamped || running) return;
-  running = true;
-  startBtn.disabled = true;
-  clampBtn.disabled = true;
-  resetBtn.disabled = true;
-  progressBarContainer.style.display = 'block';
-  statusBar.textContent = 'Status: Forming...';
-  updateInitialState();
-
-  const reductionPerc = clamp(parseFloat(reduction_in.value)||40, 1, 80);
-  const reduction = reductionPerc / 100.0;
-  const friction = parseFloat(friction_in.value);
-  const gamma = gamma_default;
-
-  // compute final geometry
-  const final = computeFinalGeometry(OD0, ID0, H0, reduction, friction, gamma);
-  const ODf = final.ODf;
-  const IDf = final.IDf;
-  const Hf = final.Hf;
-
-  // animate interpolation
-  const duration = 2600 + 400*(1 - reduction); // ms
-  const tstart = performance.now();
-
-  function step(t){
-    const elapsed = t - tstart;
-    const p = clamp(elapsed/duration, 0, 1);
-    // ease
-    const ease = p<0.5? 2*p*p : -1 + (4-2*p)*p;
-    const Hc = H0 + (Hf - H0)*ease;
-    const ODc = OD0 + (ODf - OD0)*ease;
-    const IDc = ID0 + (IDf - ID0)*ease;
-
-    Hcread.textContent = Hc.toFixed(2);
-    ODcread.textContent = ODc.toFixed(2);
-    IDcread.textContent = IDc.toFixed(2);
-    renderState(ODc, IDc, Hc, ease);
-    progressBar.style.width = (ease*100) + '%';
-
-    if(p < 1){
-      animId = requestAnimationFrame(step);
-    } else {
-      // finish
-      running = false;
-      progressBar.style.width = '100%';
-      progressBarContainer.style.display = 'none';
-      resetBtn.disabled = false;
-      startBtn.disabled = true;
-      clampBtn.disabled = true;
-      statusBar.textContent = 'Status: Cycle complete — inspect geometry & estimated friction.';
-      // Estimate friction using calibration curve matching
-      const idChangePerc = (IDf - ID0)/ID0; // relative
-      const estF = estimateFrictionFromPoint(reductionPerc, idChangePerc);
-      estFricOut.textContent = (estF===null? '—' : estF.toFixed(2));
-      // color status
-      if(IDf > ID0 + 0.5){
-        statusBar.style.background = 'var(--good)';
-        statusBar.textContent = 'Status: Low-friction behaviour — ID increased (outward radial flow).';
-      } else if(IDf < ID0 - 0.5){
-        statusBar.style.background = 'var(--bad)';
-        statusBar.textContent = 'Status: High-friction behaviour — ID decreased (inward flow).';
-      } else {
-        statusBar.style.background = 'var(--warn)';
-        statusBar.textContent = 'Status: Moderate friction — partial flow.';
-      }
-      // update final readouts (stable)
-      Hcread.textContent = Hf.toFixed(2);
-      ODcread.textContent = ODf.toFixed(2);
-      IDcread.textContent = IDf.toFixed(2);
-    }
-  }
-  animId = requestAnimationFrame(step);
-});
-
-// reset
-resetBtn.addEventListener('click', ()=>{
-  if(animId) cancelAnimationFrame(animId);
-  clamped=false; running=false;
-  clampBtn.disabled=false; clampBtn.textContent='Clamp Workpiece';
-  startBtn.disabled=true; resetBtn.disabled=true;
-  progressBarContainer.style.display='none'; progressBar.style.width='0%';
-  statusBar.textContent = 'Status: Click Clamp Workpiece to begin.';
-  statusBar.style.background = '';
-  estFricOut.textContent = '—';
-  updateInitialState();
-  renderState(OD0, ID0, H0, 0);
-});
-
-// export CSV
-exportBtn.addEventListener('click', ()=>{
-  // final geometry values (current readouts)
-  const Hfinal = parseFloat(Hcread.textContent);
-  const ODfinal = parseFloat(ODcread.textContent);
-  const IDfinal = parseFloat(IDcread.textContent);
-  const csv = [
-    ['Parameter','Value'],
-    ['OD0 (mm)', OD0],
-    ['ID0 (mm)', ID0],
-    ['H0 (mm)', H0],
-    ['Reduction (%)', reduction_in.value],
-    ['Friction param', friction_in.value],
-    ['H_final (mm)', Hfinal],
-    ['OD_final (mm)', ODfinal],
-    ['ID_final (mm)', IDfinal],
-    ['Estimated friction (from calib)', estFricOut.textContent]
-  ].map(r => r.join(',')).join('\n');
-
-  const blob = new Blob([csv], {type: 'text/csv'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = 'ring_compression_result.csv';
-  document.body.appendChild(a); a.click(); a.remove();
-  URL.revokeObjectURL(url);
-});
-
-// keep inputs synced
-OD_in.addEventListener('change', ()=>{ updateInitialState(); generateCalibration(); renderState(OD0,ID0,H0,0); });
-ID_in.addEventListener('change', ()=>{ updateInitialState(); generateCalibration(); renderState(OD0,ID0,H0,0); });
-H_in.addEventListener('change', ()=>{ updateInitialState(); generateCalibration(); renderState(OD0,ID0,H0,0); });
-reduction_in.addEventListener('change', ()=>{ /* no-op */ });
-
-// bootstrap on load
-window.addEventListener('load', ()=>{
-  updateInitialState();
-  generateCalibration();
-  renderState(OD0, ID0, H0, 0);
-});
-</script>
+        
+		 
+    <!-- JS file (if needed) -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
