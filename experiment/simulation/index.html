@@ -1,157 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Comparative Simulation</title>
-    <!-- Your external CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab - Dayalbagh Educational Institute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Basic Dropdown Menu Styling */
+        ul.dropdown {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #333;
+            text-align: center;
+        }
+
+        ul.dropdown li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul.dropdown li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul.dropdown li a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown Submenus */
+        ul.dropdown ul {
+            display: none;
+            position: absolute;
+            background: #444;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        ul.dropdown ul li {
+            display: block;
+            text-align: left;
+        }
+
+        ul.dropdown li:hover > ul {
+            display: block;
+        }
+
+        /* Deep nesting */
+        ul.dropdown ul ul {
+            left: 100%;
+            top: 0;
+        }
+
+        /* Content Styling */
+        #main-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            background-color: #000;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        #description-box {
+            width: 1020px;
+            max-width: 95%;
+            border: 2px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            min-height: 100px;
+        }
+
+        #footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
-<br>
-    <h2 class="page-title">Simulation- SHEETMETAL</h2>
-
-    <!-- 3 sections in a row (responsive grid) -->
-    <div class="section-row">
-        <section class="section">
-            <h3><u>BENDING OPERATIONS</u></h3>
-            <h3>BENDING OPERATION TO REDUCE THE SPRING BACK </h3>
-            <div class="block">
-                <h4><a href="V SHAPE.html">V SHAPE PUNCH</a></h4>
-            </div>
-          <div class="block">
-                <h4><a href="U SHAPE .html">U SHAPE PUNCH</a></h4>
-            </div>
-          <div class="block">
-                <h4><a href="V SHAPE PUNCH.html">V SHAPE PUNCH AND CURVE</a></h4>
-            </div>
-            <hr>
-              <h3>BENDING OPERATION TO REMOVE THE SPRING BACK </h3>
-            <div class="block">
-                <h4><a href="BENDING.html">Simulation</a></h4>
-                
-            </div>
-            <hr>
-            <h3>COMMON DIE BENDING</h3>
-            <div class="block">
-                <h4><a href="V BENDING .html">V BENDING</a></h4>
-               
-            </div>
-          <div class="block">
-                <h4><a href="CIRCULAR BENDING.html">CIRCULAR BENDING</a></h4>
-               
-            </div>
-            <hr>
-          <h3>WIPE DIE BENDING</h3>
-            <div class="block">
-                <h4><a href="WIPE.html">SIMULATION</a></h4>
-               
-            </div>
-          <hr>
-          <h3>AIR BENDING</h3>
-            <div class="block">
-                <h4><a href="AIR.html">SIMULATION</a></h4>
-               
-            </div>
-        </section>
-
+<div id="header">
+    <ul class="dropdown">
+        <li><a href="home.php">Home</a></li>
+        <li><a href="SheetMetal.php">Sheet Metal</a></li>
         
-        <section class="section">
-          <h3><u>Applications: </u></h3>
-<br>
-        <h3>CORRUGATED SHEET </h3>
-        <div class="block">
-                            <h4><a href="s1.html">CORRUGATED SHEET </a></h4>
-                <h4><a href="s2.html">CORRUGATED SHEET WITH FORGING FORCE</a></h4>
-          <h4><a href="s3.html"> CIRCULAR CORRUGATED SHEET </a></h4>
-           <h4><a href="s4.html"> CONICAL CORRUGATED SHEET </a></h4>
- <h4><a href="s5.html"> CONTINUOUS CORRUGATED SHEET </a></h4>
- <h4><a href="s6.html"> DISCRETE CORRUGATED SHEET </a></h4>
+        <li><a href="#">Bending Operations</a>
+            <ul>
+                <li><a href="#">Reduce Springback</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('Bending1')">V-Shape Punch</a></li>
+                        <li><a href="#" onclick="loadExperiment('Bending2')">U-Shape Punch</a></li>
+                        <li><a href="#" onclick="loadExperiment('Bending4')">V-Shape Punch & Curve</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="loadExperiment('Bending3')">Remove Springback</a></li>
+                <li><a href="#">Common Die Bending</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('Bending5')">V-Bending</a></li>
+                        <li><a href="#" onclick="loadExperiment('Bending8')">Circular Bending</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="loadExperiment('Bending6')">Wipe Die Bending</a></li>
+                <li><a href="#" onclick="loadExperiment('Bending7')">Air Bending</a></li>
+            </ul>
+        </li>
 
+        <li><a href="#">Applications</a>
+            <ul>
+                <li><a href="#">Corrugated Sheet</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('CorrugatedSetup')">Corrugated sheet</a></li>
+                        <li><a href="#" onclick="loadExperiment('CorrugatedCurve')">Corrugated sheet (Forging Force)</a></li>
+                        <li><a href="#" onclick="loadExperiment('CircularSheet')">Circular corrugated sheet</a></li>
+                        <li><a href="#" onclick="loadExperiment('ConicalSheet')">Conical corrugated sheet</a></li>
+                        <li><a href="#" onclick="loadExperiment('ContinuousSheet')">Continuous corrugated sheet</a></li>
+                        <li><a href="#" onclick="loadExperiment('DiscreteSheet')">Discrete corrugated sheet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bead Forming</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('BeadingRodSetup')">Bead forming of rod</a></li>
+                        <li><a href="#" onclick="loadExperiment('BeadingRodStrain')">Bead forming of rod (Strain)</a></li>
+                        <li><a href="#" onclick="loadExperiment('BeadingRodCurve')">Bead forming of rod (Curve)</a></li>
+                        <li><a href="#" onclick="loadExperiment('BeadingStripSetup')">Bead forming of sheet</a></li>
+                        <li><a href="#" onclick="loadExperiment('BeadingStripStrain')">Bead forming of sheet (Strain)</a></li>
+                        <li><a href="#" onclick="loadExperiment('BeadingStripCurve')">Bead forming of sheet (Curve)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deep Drawing</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('Drawing1')">Deep drawing-Downward</a></li>
+                        <li><a href="#" onclick="loadExperiment('Drawing2')">Deep drawing-Upward</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Roll Forming</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('RollForming')">Roll forming</a></li>
+                        <li><a href="#" onclick="loadExperiment('CurveRoll')">Roll forming with curve</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="loadExperiment('RollBending')">Roll Bending</a></li>
+                <li><a href="#">Piercing</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('PiercingProcess')">Piercing process</a></li>
+                        <li><a href="#" onclick="loadExperiment('PiercingSetup')">Piercing Setup</a></li>
+                        <li><a href="#" onclick="loadExperiment('PiercingStrain')">Piercing with strain</a></li>
+                        <li><a href="#" onclick="loadExperiment('PiercingCurve')">Piercing with forging force</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bush</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('FormingBush')">Bush Forming</a></li>
+                        <li><a href="#" onclick="loadExperiment('FormingCurveBush')">Bush Forming with curve</a></li>
+                        <li><a href="#" onclick="loadExperiment('InitialBush')">Bush step-1</a></li>
+                        <li><a href="#" onclick="loadExperiment('InitialCurveBush')">Bush step-1 with curve</a></li>
+                        <li><a href="#" onclick="loadExperiment('MiddleBush')">Bush step-2</a></li>
+                        <li><a href="#" onclick="loadExperiment('MiddleCurveBush')">Bush step-2 with curve</a></li>
+                        <li><a href="#" onclick="loadExperiment('NextBush')">Bush step-3</a></li>
+                        <li><a href="#" onclick="loadExperiment('NextCurveBush')">Bush step-3 with curve</a></li>
+                        <li><a href="#" onclick="loadExperiment('FinalBush')">Final Bush</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Punching</a>
+                    <ul>
+                        <li><a href="#" onclick="loadExperiment('PunchingOperation')">Punching Operation</a></li>
+                        <li><a href="#" onclick="loadExperiment('PunchingContour')">Punching with Contour</a></li>
+                        <li><a href="#" onclick="loadExperiment('PunchingGraph')">Punching with Graph</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="loadExperiment('Coining')">Coining</a></li>
+                <li><a href="#" onclick="loadExperiment('DoorHandle')">Door Handle</a></li>
+                <li><a href="#" onclick="loadExperiment('CoverPlate')">Cover Plate</a></li>
+            </ul>
+        </li>
+        <li><a href="MCQ_SheetMetal.php">Self Check Quiz</a></li>
+    </ul>
+</div>
 
-        </div>
-         <h3>BEAD FORMING </h3>
-        <div class="block">
-                            <h4><a href="B1.html">BEAD FORMING OF ROD </a></h4>
-          <h4><a href="B2.html">BEAD FORMING OF ROD WITH STRAIN </a></h4>
-          <h4><a href="B3.html">BEAD FORMING OF ROD WITH CURVE </a></h4>
-          
-          <h4><a href="B4.html">BEAD FORMING OF SHEET WITH STRAIN</a></h4>
-          <h4><a href="B4.html">BEAD FORMING OF SHEET WITH CURVE </a></h4>
-          
+<div id="main-container">
+    <video id="labVideo" width="1020" height="574" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-        </DIV>
-        <h3>DEEP DRAWING </h3>
-        <div class="block">
-                            <h4><a href="D1.html">DEEP DRAWING DOWNWARDS</a></h4>
-           <h4><a href="D2.html">DEEP DRAWING UPWARDS</a></h4>
-        </DIV>
-          
-          <h3>ROLL FORMING</h3>
-        <div class="block">
-                            <h4><a href="R1.html">ROLL FORMING</a></h4>
-          <h4><a href="R2.html">ROLL FORMING WITH CURVE</a></h4>
-              
-        </DIV>
-          <h3>ROLL BENDING</h3>
-        <div class="block">
-                            <h4><a href="ROLL1.html">ROLL BENDING</a></h4>
-          
-              
-        </DIV>
-          <h3>PIERCING</h3>
-        <div class="block">
-                            <h4><a href="PI1.html">PIERCING PROCESS</a></h4>
-          <h4><a href="PI2.html">PIERCING SETUP</a></h4>
-          <h4><a href="PI3.html">PIERCING WITH STRAIN</a></h4>
-          <h4><a href="PI4.html">PIERCING WITH FORGING FORCE</a></h4>
-              
-        </DIV>
-          <h3>BUSH</h3>
-        <div class="block">
-                            <h4><a href="BU1.html">BUSH FORMING </a></h4>
-          <h4><a href="BU2.html">BUSH FORMING WITH CURVE</a></h4>
-          <h4><a href="BU3.html">BUSH FORMING STEP 1</a></h4>
-          <h4><a href="BU4.html">BUSH FORMING STEP 1 WITH CURVE</a></h4>
-          <h4><a href="BU5.html">BUSH FORMING STEP 2</a></h4>
-          <h4><a href="BU6.html">BUSH FORMING  STEP 2 WITH CURVE</a></h4>
-              
-        </DIV>
-           <h3>PUNCHING</h3>
-        <div class="block">
-                            <h4><a href="PU1.html">PUNCHING PROCESS</a></h4>
-          <h4><a href="PU2.html">PUNCHING WITH CONTOUR</a></h4>
-          <h4><a href="PU3.html">PIERCING WITH GRAPH</a></h4>
-          
-              
-        </DIV>
-          <h3>COINING</h3>
-        <div class="block">
-                            <h4><a href="COIN.html">SIMULATION</a></h4>
-          
-              
-        </DIV>
-          <h3>DOOR HANDLE </h3>
-        <div class="block">
-                            <h4><a href="DOOR.html">SIMULATION</a></h4>
-          
-              
-        </DIV>
-          <h3>COVER PLATE</h3>
-        <div class="block">
-                            <h4><a href="COVER.html">SIMULATION</a></h4>
-          
-              
-        </DIV>
-            <br>
+    <div id="description-box">
+        Please select an experiment from the menu above to view the simulation and details.
+    </div>
+</div>
 
-           
-          <!--<h3><a href="pattern.html">PATTERN MAKING</a></h3>-->
-        </section>
+<div id="footer">
+    &copy; Metal Forming Virtual Simulation Lab - Dayalbagh Educational Institute (www.dei.ac.in)
+</div>
 
+<script>
+    // Data Object containing all video paths and descriptions
+    const experimentData = {
+        "Bending1": {
+            video: "SHEETMETAL/Bending/Bending1.mp4",
+            text: "This sheet metal bending simulation depicts a method to reduce Spring back. The punch used here is of v shape & the die of rectangular shape. The bend produced in the sheet is of the same angle as that of the punch. The bottom of the sheet does not touch the lower portion of the bottom die. The sheet taken here is of 1mm in thickness. Punch velocity in downward direction is 3 mm/s. The variation of the punch force required is shown in the graph on the right side. The maximum punch force is 0.08 tonne."
+        },
+        "Bending2": {
+            video: "SHEETMETAL/Bending/Bending2.mp4",
+            text: "This sheet metal bending simulation depicts a method to reduce Spring back. The front cross section of the punch is rectangular in shape. The bend produced after this type of bending process forms a u shape that's why also called U-bending. The sheet taken here is of 1mm in thickness. The maximum punch force is 0.4 tonnes."
+        },
+        "Bending3": {
+            video: "SHEETMETAL/Bending/Bending3.mp4",
+            text: "This sheet metal bending simulation depicts a method to reduce spring back. The punch used here is not a simple v punch, but at the tip of the punch one can see a bigger end. This type of punch is used to put extra pressure on the sheet to reduce spring back. Maximum punch force is 1.5 tonne."
+        },
+        "Bending4": {
+            video: "SHEETMETAL/Bending/Bending4.mp4",
+            text: "This sheet metal bending simulation depicts a method to reduce spring back. The punch used here is a simple v punch, but the die used here is rectangular type. In This type of bending the bend angle of sheet is kept bigger than the angle of punch, the depth of die decides the angle. Maximum punch force is 0.06 tonne."
+        },
+        "Bending5": {
+            video: "SHEETMETAL/Bending/Bending5.mp4",
+            text: "This sheet metal bending simulation depicts a simple v bending operation. The punch used here is a simple v punch & the die used here is also of v type. In This type of bending the bend angle of sheet is same as that of the die angle."
+        },
+        "Bending6": {
+            video: "SHEETMETAL/Bending/Bending6.mp4",
+            text: "This method of bending is called Wipe die bending or edge bending. Wipe bending requires the sheet to be held by a pressure pad upon the wipe die. The punch then presses against the edge of the sheet that extends beyond the die and pad. The sheet will bend according to the radius of the edge of the wipe die."
+        },
+        "Bending7": {
+            video: "SHEETMETAL/Bending/Bending7.mp4",
+            text: "This simulation depicts 'air bending'. The punch does not force the sheet to the bottom of the die cavity, leaving some space underneath. The die used here is of rectangular type. A V-groove die can also be used where it must have a sharper angle than the angle being formed in the sheet."
+        },
+        "Bending8": {
+            video: "SHEETMETAL/Bending/Bending8.mp4",
+            text: "Here in this type of bending operation the punch and die both are circular in shape. The sheet here completely touches the lower die when pressed by the punch."
+        },
+        "BeadingRodStrain": {
+            video: "SHEETMETAL/Beading/BeadingRodStrain.mp4",
+            text: "Bead forming is used to make a round corner of a sheet or a rod. In this video, equivalent strain generated in the rod is shown. The maximum strain generated is 2.9. Change in the value of equivalent strain refers to the refinement of the microstructure of the material."
+        },
+        "BeadingRodSetup": {
+            video: "SHEETMETAL/Beading/BeadingRodSetup.mp4",
+            text: "Bead forming is a type of bending process used to make a round corner of a sheet or a rod. The upper die in yellow color moves downward which bends the rod end (red color) and forms it to the bead shape."
+        },
+        "BeadingRodCurve": {
+            video: "SHEETMETAL/Beading/BeadingRodCurve.mp4",
+            text: "Bead forming setup. On the right hand side, forging force required is shown. The maximum force is 0.25 tonnes. Lower forging force means metal forming can be done more easily."
+        },
+        "BeadingStripSetup": {
+            video: "SHEETMETAL/Beading/BeadingStripSetup.mp4",
+            text: "Bead forming of a strip. The upper die in yellow color moves downward which bends the strip end (red color) and forms it to the bead shape."
+        },
+        "BeadingStripStrain": {
+            video: "SHEETMETAL/Beading/BeadingStripStrain.mp4",
+            text: "Bead forming of a strip showing strain. The maximum strain generated is 6.9. Higher the equivalent strain, the finer the microstructure."
+        },
+        "BeadingStripCurve": {
+            video: "SHEETMETAL/Beading/BeadingStripCurve.mp4",
+            text: "Bead forming of a strip showing force. The maximum force is 0.25 tonnes."
+        },
+        "Coining": {
+            video: "SHEETMETAL/Coining.mp4",
+            text: "Coining is the process in which metal is plastically deformed in a closed set of dies. The upper die has an impression of a medal. The lower die contains a cavity for placing the billet. This uses an alloy of aluminium as billet and the velocity of upper die is 10 mm/sec."
+        },
+        "PunchingOperation": {
+            video: "SHEETMETAL/PunchingOperation.mp4",
+            text: "In this punching operation simulation, a cold forming process is used on a rectangular billet of plane carbon steel at 20°C. The billet uses finite elements for better force analysis."
+        },
+        "PunchingContour": {
+            video: "SHEETMETAL/PunchingContour.mp4",
+            text: "Variation of strain in the billet during punching. Initially strain is zero, rising to 55.5878 during deformation. Greater strain indicates more deformation and grain refinement."
+        },
+        "PunchingGraph": {
+            video: "SHEETMETAL/PunchingGraph.mp4",
+            text: "Left side: Processing of punching operation. Right top: Initial vs final billet. Right bottom: Variation in billet with mesh."
+        },
+        "DoorHandle": {
+            video: "SHEETMETAL/DoorHandle.mp4",
+            text: "Forming of a door handle (Al 2014, 4mm thick). Punch moves downward to press the sheet over the lower die. Two pressure pads apply pressure. Max force: 2.13 tonnes. Max stress: 54.63 MPa."
+        },
+        "CorrugatedSetup": {
+            video: "SHEETMETAL/CorrugatedSheet/CorrugatedSetup.mp4",
+            text: "Corrugated sheet forming using a hydraulic press on plane carbon steel at 20°C. Strain rises up to 1.806 indicating deformation and grain refinement."
+        },
+        "CorrugatedCurve": {
+            video: "SHEETMETAL/CorrugatedSheet/CorrugatedCurve.mp4",
+            text: "Left bottom: Variation of strain (up to 1.806). Right bottom: Graph plot between the upper die and pilot height."
+        },
+        "CircularSheet": {
+            video: "SHEETMETAL/CorrugatedSheet/CircularSheet.mp4",
+            text: "Circular corrugated sheet forming. Strain rises up to 1.806. Temperature rises up to 20°C at the end of the operation."
+        },
+        "ConicalSheet": {
+            video: "SHEETMETAL/CorrugatedSheet/ConicalSheet.mp4",
+            text: "Conical corrugated sheet forming. Strain rises up to 1.806. Temperature rises up to 20°C."
+        },
+        "ContinuousSheet": {
+            video: "SHEETMETAL/CorrugatedSheet/ContinuousSheet.mp4",
+            text: "Continuous corrugated sheet forming using a pair of grooved rollers. The crest of one roller faces the trough of the other to deform a plain sheet into a corrugated one."
+        },
+        "DiscreteSheet": {
+            video: "SHEETMETAL/CorrugatedSheet/DiscreteSheet.mp4",
+            text: "Discrete corrugated sheet forming (C15 steel, 2mm). Upper die angle is 45°. Upper die moves at 5 mm/sec."
+        },
+        "Drawing1": {
+            video: "SHEETMETAL/Drawing1.mp4",
+            text: "Deep drawing operation (downward). The initial circular plate is cold. As the movable die moves keeping the central part stationary, cupping takes place."
+        },
+        "Drawing2": {
+            video: "SHEETMETAL/Drawing2.mp4",
+            text: "Deep drawing operation (upward). As the movable dies move keeping central part stationary, cupping of the plate takes place."
+        },
+        "PiercingProcess": {
+            video: "SHEETMETAL/Piercing/PiercingProcess.mp4",
+            text: "Piercing operation on a circular sheet. Equivalent strain is high at the center and low at the periphery."
+        },
+        "PiercingSetup": {
+            video: "SHEETMETAL/Piercing/PiercingSetup.mp4",
+            text: "Piercing setup (Aluminium billet at 20°C). The billet is divided into finite elements for analysis."
+        },
+        "PiercingStrain": {
+            video: "SHEETMETAL/Piercing/PiercingStrain.mp4",
+            text: "Variation in the billet during the piercing operation, showing initial and final states."
+        },
+        "PiercingCurve": {
+            video: "SHEETMETAL/Piercing/PiercingCurve.mp4",
+            text: "Variation of strain in the billet and temperature graph during the piercing operation."
+        },
+        "CoverPlate": {
+            video: "SHEETMETAL/CoverPlate.mp4",
+            text: "Manufacturing of a cover plate by forging. The upper die moves down, followed by side dies to deform the sheet."
+        },
+        "RollForming": {
+            video: "SHEETMETAL/RollForming.mp4",
+            text: "Roll forming: passing plain sheet through progressive dies (rollers). Bottom left shows dies at 180°, 157.5°, and 135°."
+        },
+        "RollBending": {
+            video: "SHEETMETAL/RollBending.mp4",
+            text: "Roll bending of a T-shaped aluminium alloy bar using three rollers. The middle roller is forced against the bar to create the curve."
+        },
+        "CurveRoll": {
+            video: "SHEETMETAL/CurveRoll.mp4",
+            text: "Roll forming with curve. Bottom right graph shows force experienced by rollers (Max force: 0.33 tonnes)."
+        },
+        "FormingBush": {
+            video: "SHEETMETAL/Bush/FormingBush.mp4",
+            text: "Bush forming in 3 steps (Copper alloy, 2mm). Step 1: Punch moves down. Step 2: Side punches move in. Step 3: Final punch shapes the round bush."
+        },
+        "FormingCurveBush": {
+            video: "SHEETMETAL/Bush/FormingCurveBush.mp4",
+            text: "Detailed analysis of bush forming steps including strain variations (Step 1: up to 1.0, Step 2: up to 2.18, Step 3: up to 6.57)."
+        },
+        "InitialBush": {
+            video: "SHEETMETAL/Bush/InitialBush.mp4",
+            text: "Bush Step 1 processing: Initial vs Final billet visualization."
+        },
+        "InitialCurveBush": {
+            video: "SHEETMETAL/Bush/InitialCurveBush.mp4",
+            text: "Bush Step 1 with curve: Strain rises up to 1.0."
+        },
+        "MiddleBush": {
+            video: "SHEETMETAL/Bush/MiddleBush.mp4",
+            text: "Bush Step 2 processing: Initial vs Final billet visualization."
+        },
+        "MiddleCurveBush": {
+            video: "SHEETMETAL/Bush/MiddleCurveBush.mp4",
+            text: "Bush Step 2 with curve: Strain rises to 2.18833."
+        },
+        "NextBush": {
+            video: "SHEETMETAL/Bush/NextBush.mp4",
+            text: "Bush Step 3 processing."
+        },
+        "NextCurveBush": {
+            video: "SHEETMETAL/Bush/NextCurveBush.mp4",
+            text: "Bush Step 3 with curve: Strain rises to 6.57492."
+        },
+        "FinalBush": {
+            video: "SHEETMETAL/Bush/FinalBush.mp4",
+            text: "Summary of all 3 steps of bush forming with billet variations."
+        }
+    };
+
+    function loadExperiment(key) {
+        // Prevent default link behavior handled by onclick
+        event.preventDefault();
+
+        const data = experimentData[key];
+        const videoPlayer = document.getElementById('labVideo');
+        const videoSource = document.getElementById('videoSource');
+        const descriptionBox = document.getElementById('description-box');
+
+        if (data) {
+            // Update Video
+            videoSource.src = data.video;
+            videoPlayer.load(); // Reload the video element to play the new source
+            videoPlayer.play();
+
+            // Update Text
+            descriptionBox.innerHTML = data.text;
+        } else {
+            descriptionBox.innerHTML = "Experiment data not found.";
+        }
         
-		 
-    <!-- JS file (if needed) -->
-    <script src="./js/main.js"></script>
+        // Scroll to the content area
+        document.getElementById('main-container').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 </html>
