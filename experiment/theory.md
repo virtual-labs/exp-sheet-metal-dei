@@ -85,10 +85,21 @@ In practical terms, if we want a workpiece with a 90-degree bend in which one le
   <img src="images/SheetMetal/formulla1.jpg" width="200" height="70">
 </p>
 
-Where: $A_{b}$ = Bend allowance $\alpha$ = Bend angle R = Bend radius  $t$ = Stock thickness $K_{ba}$ = Factor to estimate stretching
+## Bend Allowance Parameters
 
- If $R < 2t$, $K_{ba} = 0.33$
- If $R = 2t$, $K_{ba} = 0.50$
+Where:
+
+- **A<sub>b</sub>** = Bend allowance  
+- **a** = Bend angle  
+- **R** = Bend radius  
+- **t** = Stock thickness  
+- **K<sub>ba</sub>** = Factor used to estimate material stretching  
+
+### K<sub>ba</sub> Values
+
+- If **R < 2t**, then **K<sub>ba</sub> = 0.33**  
+- If **R = 2t**, then **K<sub>ba</sub> = 0.50**
+
 
 **Spring Back:**
 Because all materials have a finite modulus of elasticity, plastic deformation is followed by elastic recovery upon removal of the load; in bending, this recovery is known as spring back. The amount of spring back depends on the material, thickness, grain, and temper. The spring back will usually range from 5 to 10 degrees.
